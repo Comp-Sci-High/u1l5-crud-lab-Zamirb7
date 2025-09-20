@@ -20,9 +20,9 @@ console.log(playlist)
 // OBJECTS SECTION
 // Task 5: Create an object called 'song' with 'title', 'artist', and 'duration' properties
 let song = {
-    title:"",
-    artist:"",
-    duration:"",
+    title:"Heart pt. 6",
+    artist:"Kendrick Lamar",
+    duration:"4:53",
 }
 
 // Task 6: Add a property 'listenedTo' to the 'song' object and set it to false
@@ -35,18 +35,24 @@ delete song.artist;
 // ----------------------------------
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
-
+let album = {
+    name:"",
+    year:"",
+    songs:[""],
+}
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
-
+album.songs.push(song)
 
 // Console log the length of the album's songs array to confirm it worked
-
+console.log(album.songs.length);
 // Task 10: Update the title of the song to be all lowercase. 
+song[0]="heart pt. 6";
 // Console log the album object to check your change
-
+console.log(album)
 
 // Commit your changes with an appropriate message.
+
 // ----------------------------------
 // EXTRA CREDIT
 // Use prompt-sync to prompt the user to enter the title, artist, and duration
